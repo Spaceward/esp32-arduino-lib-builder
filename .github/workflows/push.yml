@@ -42,8 +42,8 @@ jobs:
           GITHUB_REPOSITORY: espressif/esp32-arduino-lib-builder
           GITHUB_REPOSITORY_OWNER: espressif
       #run: bash ./build.sh -e -t ${{ matrix.target }}
-      #run: bash ./build.sh -t ${{ matrix.target }} -A 3.3.12
-      run: bash ./build.sh -t ${{ matrix.target }} -A release/v3.3
+      run: bash ./build.sh -t ${{ matrix.target }} -A 3.3.12
+      #run: bash ./build.sh -t ${{ matrix.target }} -A release/v3.3
 
     - name: Upload build
       if: failure()
