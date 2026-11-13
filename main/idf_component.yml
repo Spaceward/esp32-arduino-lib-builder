@@ -7,11 +7,11 @@ dependencies:
     require: public
     rules:
       - if: "target in [esp32, esp32s2, esp32s3]"
-  espressif/esp-tflite-micro:
-    version: ">=1.2.0"
-    require: public
-    rules:
-      - if: "target not in [esp32c2]"
+  #espressif/esp-tflite-micro:
+  #  version: ">=1.2.0"
+  #  require: public
+  #  rules:
+  #    - if: "target not in [esp32c2]"
   espressif/esp-sr:
     version: ">=1.4.2"
     rules:
