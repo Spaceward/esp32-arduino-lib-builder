@@ -1,9 +1,10 @@
 name: ESP32 Arduino Libs CI
 
 on:
+  workflow_dispatch:
   push:
     branches:
-    - master
+    - idf-release_v5.5_pm-c6
   pull_request:
     paths:
       - "**"
