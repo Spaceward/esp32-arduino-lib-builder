@@ -43,7 +43,7 @@ if [ "$AR_BRANCH" ]; then
 	echo "AR_BRANCH='$AR_BRANCH'"
 	git -C "$AR_COMPS/arduino" fetch --all && \
 	git -C "$AR_COMPS/arduino" checkout "$AR_BRANCH" 
-	#!
+	#! comment git pull
 	#&& \
 	#git -C "$AR_COMPS/arduino" pull --ff-only
 fi
