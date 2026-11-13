@@ -60,7 +60,11 @@ jobs:
       uses: actions/upload-artifact@v4
       with:
         name: artifacts-${{ matrix.target }}
-        path: dist
+        #! change path to path: | dist out
+        #path: dist
+        path: |
+            dist
+            out
 
   combine-artifacts:
     name: Combine artifacts
