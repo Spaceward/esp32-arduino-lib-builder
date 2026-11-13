@@ -7,7 +7,7 @@ dependencies:
     require: public
     rules:
       - if: "target in [esp32, esp32s2, esp32s3]"
-  #!
+  #! comment esp-tflite-micro or change c++ ver.
   #espressif/esp-tflite-micro:
   #  version: ">=1.2.0"
   #  require: public
@@ -18,7 +18,7 @@ dependencies:
     rules:
       - if: "target in [esp32s3]"
   espressif/esp_matter:
-    #!
+    #! fix version: "1.5.1"
     #version: "^1.3.0"
     version: "1.5.1"
     require: public
