@@ -28,7 +28,8 @@ fi
 AR_USER="${GITHUB_REPOSITORY_OWNER:-espressif}"
 
 # The full name of the repository
-AR_REPO="$AR_USER/arduino-esp32"
+#AR_REPO="$AR_USER/arduino-esp32"
+AR_REPO="https://github.com"
 IDF_REPO="$AR_USER/esp-idf"
 AR_LIBS_REPO="$AR_USER/esp32-arduino-lib-builder"
 
