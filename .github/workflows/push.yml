@@ -36,6 +36,11 @@ jobs:
       run: bash ./tools/prepare-ci.sh
 
     - name: Build Libs for ${{ matrix.target }}
+      env:
+          AR_REPO: https://github.com
+          IDF_REPO: https://github.com
+          GITHUB_REPOSITORY: espressif/esp32-arduino-lib-builder
+          GITHUB_REPOSITORY_OWNER: espressif
       #run: bash ./build.sh -e -t ${{ matrix.target }}
       run: bash ./build.sh -t ${{ matrix.target }} -A 3.3.12
 
