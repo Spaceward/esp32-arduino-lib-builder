@@ -38,6 +38,7 @@ jobs:
       run: bash ./tools/prepare-ci.sh
 
     - name: Build Libs for ${{ matrix.target }}
+      #! add env
       env:
           AR_REPO: https://github.com
           IDF_REPO: https://github.com
