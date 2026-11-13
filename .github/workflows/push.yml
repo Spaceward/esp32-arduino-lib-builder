@@ -36,7 +36,8 @@ jobs:
       run: bash ./tools/prepare-ci.sh
 
     - name: Build Libs for ${{ matrix.target }}
-      run: bash ./build.sh -e -t ${{ matrix.target }}
+      #run: bash ./build.sh -e -t ${{ matrix.target }}
+      run: bash ./build.sh -t ${{ matrix.target }} -A 3.3.12
 
     - name: Upload build
       if: failure()
